@@ -1,0 +1,17 @@
+<div class="container mt-4">
+    <form (ngSubmit)="onSave()">
+        <div class="mb-3">
+
+            <label class="form-label">Name: <input class="form-control" [disabled]="true" name="name" [(ngModel)]="activeIngredient.name"></label>
+        </div>
+        <div>
+
+            <label class="form-label">Ingredient Type: <input class="form-control" name="ingredientType" [(ngModel)]="activeIngredient.ingredientType"></label>
+        </div>
+        <div>
+
+            <label class="form-label">Benefits: <input class="form-control" name="benefits" [(ngModel)]="activeIngredient.benefits"></label>
+        </div>
+        <button class="btn btn-dark" type="submit">Save</button>
+    </form>
+</div>

@@ -1,0 +1,14 @@
+<form class="container mt-5" (ngSubmit)="onSave()">
+
+    <h1>Full Update</h1>
+    <div class="mb-3">
+        <label class="form-label">Name: <input class="form-control" name="name" [(ngModel)]="activeIngredient.name"></label>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Ingredient Type: <input class="form-control" name="ingredientType" [(ngModel)]="activeIngredient.ingredientType"></label>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Benefits: <input class="form-control" name="benefits" [(ngModel)]="activeIngredient.benefits"></label>
+    </div>
+    <button class="btn btn-dark" type="submit">Save</button>
+</form>

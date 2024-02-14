@@ -1,0 +1,18 @@
+<div>
+  <h1>Partial Update</h1>
+  <div>
+    <form [formGroup]="skincareProductForm">
+      <div>
+        <label for="Manufacturer">Manufacturer</label>
+        <input formControlName="manufacturer" />
+      </div>
+      <div>
+        <label for="SkinType">Skin Type</label>
+        <input formControlName="skinType" />
+      </div>
+      <div>
+        <button type="submit" (click)="onUpdate()">Save</button>
+      </div>
+    </form>
+  </div>
+</div>

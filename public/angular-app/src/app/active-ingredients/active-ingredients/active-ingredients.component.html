@@ -1,0 +1,31 @@
+<div class="container mt-4">
+
+    <ul class="list-group">
+        <div *ngIf="activeIngredients.length>0">
+
+            <li class="list-group-item" else *ngFor="let activeIngredient of activeIngredients">
+                <a routerLink='/skincareProducts/{{skincareId}}/activeIngredients/{{activeIngredient._id}}'>
+                    {{activeIngredient.name}}</a>
+            </li>
+        </div>
+        <div class="list-group-item" *ngIf="activeIngredients.length == 0">
+            <div>No Active Ingredients</div>
+        </div>
+        <div>
+            <button class="btn btn-outline-dark mt-2" routerLink="/skincareProducts/{{skincareId}}/activeIngredients/new">Add
+                Active Ingredient</button>
+        </div>
+    </ul>
+</div>
+
+
+<!-- <div class="container mt-4">
+    <h1>Skin Care Products</h1>
+  
+    <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-start"
+        *ngFor="let product of skincareProducts">
+        <a class="page-link" routerLink="/skincareProducts/{{ product._id }}">{{ product.name }}</a>
+      </li>
+    </ul>
+  </div> -->

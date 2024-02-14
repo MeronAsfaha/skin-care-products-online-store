@@ -1,0 +1,15 @@
+<div class="container mt-4">
+
+    <h1 class="modal-title">{{activeIngredient.name}}</h1>
+    <p> Ingredient Type: {{activeIngredient.ingredientType}}</p>
+    <p>Benefits: {{activeIngredient.benefits}}</p>
+
+    <button
+    class="btn btn-outline-dark m-2"
+        routerLink="/skincareProducts/{{skincareId}}/activeIngredients/{{activeIngredient._id}}/partialUpdate">Partial
+        Update</button>
+    <button
+    class="btn btn-outline-dark m-2" routerLink="/skincareProducts/{{skincareId}}/activeIngredients/{{activeIngredient._id}}/fullUpdate">Full
+        Update</button>
+    <button class="btn btn-danger" (click)="onDelete()">Delete</button>
+</div>

@@ -1,0 +1,20 @@
+<div class="container mt-4">
+  <form [formGroup]="skincareForm">
+    <div>
+      <div class="mb-3">
+        <label class="form-label">Name: <input class="form-control" formControlName="name" placeholder="name" /></label>
+      </div>
+      <div class="mb-3">
+        <label>Manufacturer:
+          <input class="form-control" formControlName="manufacturer" placeholder="manufacturer" /></label>
+
+      </div>
+      <div class="mb-3">
+        <label>Skin Type: <input class="form-control" formControlName="skinType" placeholder="skin type" /></label>
+
+      </div>
+
+    </div>
+    <button class="btn btn-primary" type="submit" (click)="addSkincare()">Create Product</button>
+  </form>
+</div>

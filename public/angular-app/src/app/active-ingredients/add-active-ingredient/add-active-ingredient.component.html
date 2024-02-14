@@ -1,0 +1,17 @@
+<div>
+    <h1>Add Active Ingredient for product: {{skincareId}}</h1>
+</div>
+<form [formGroup]="ingredientForm" (ngSubmit)="addIngredient()">
+    <div>
+        <div>
+            <label>Name: <input placeholder="name" formControlName="name"></label>
+        </div>
+        <div>
+            <label>Ingredient Type: <input placeholder="ingredientType" formControlName="ingredientType"></label>
+        </div>
+        <div>
+            <label>Benefits: <input placeholder="benefits" formControlName="benefits"></label>
+        </div>
+    </div>
+    <button type="submit">Add</button>
+</form>
